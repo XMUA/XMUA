@@ -96,11 +96,11 @@
                 <div class="inputBox">
                     <div class="inputText">
                         <i class="fa fa-user-circle-o i2" aria-hidden="true"></i>
-                        <asp:TextBox CssClass="cctb" ID="username" runat="server" Text="Username"></asp:TextBox>
+                        <asp:TextBox CssClass="cctb" onfocus="this.value=''" onBlur="this.value='Username'" ID="username" runat="server" Text="Username" ToolTip="Username"></asp:TextBox>
                     </div>
                     <div class="inputText">
                         <i class="fa fa-unlock-alt i3" aria-hidden="true"></i>
-                        <asp:TextBox CssClass="cctb" ID="password" runat="server" Text="Password"></asp:TextBox>
+                        <asp:TextBox CssClass="cctb" onfocus="this.value=''" onBlur="this.value='Password'"  ID="password" runat="server" Text="Password" ToolTip="Password"></asp:TextBox>
                     </div>
                     <div  class="inputText">
                         <i class="fa fa-address-card-o i4"  aria-hidden="true"></i>

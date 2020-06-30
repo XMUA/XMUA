@@ -13,11 +13,11 @@ namespace XMUA
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void Loginb_Click(object sender, EventArgs e)
         {
+
             SqlConnection connection = new SqlConnection("Server=DESKTOP-AD15ROA\\SQLEXPRESS;UId=xmum;Password=123456;Database=XMUA");
             connection.Open();
             SqlCommand cmd = new SqlCommand("select * from [User] where username=@UN and password=@PWD", connection);
