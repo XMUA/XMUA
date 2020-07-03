@@ -17,12 +17,16 @@ namespace XMUA
 
         protected void Loginb_Click(object sender, EventArgs e)
         {
+            string select_roles = "";
+            select_roles = role.SelectedValue;
 
             SqlConnection connection = new SqlConnection("Server=DESKTOP-AD15ROA\\SQLEXPRESS;UId=xmum;Password=123456;Database=XMUA");
             connection.Open();
-            SqlCommand cmd = new SqlCommand("select * from [User] where username=@UN and password=@PWD", connection);
-            cmd.Parameters.Add("@UN", System.Data.SqlDbType.VarChar, 100).Value = username.Text;
+
+            SqlCommand cmd = new SqlCommand("select * from [User] where IDnumber=@IDN and password=@PWD and type=@TY", connection);
+            cmd.Parameters.Add("@IDN", System.Data.SqlDbType.VarChar, 100).Value = idnumber.Text;
             cmd.Parameters.Add("@PWD", System.Data.SqlDbType.VarChar, 100).Value = password.Text;
+            cmd.Parameters.Add("@TY", System.Data.SqlDbType.VarChar, 100).Value = select_roles;
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
 
@@ -30,15 +34,26 @@ namespace XMUA
 
             if (ds.Tables[0].Rows.Count == 0)
             {
-                Response.Redirect("Fail.aspx");
+                alert.Text = "Please check ID, Password and Role again!";
             }
             else
             {
-
-                    Session["username"] = username.Text;
-                    Session["user_id"] = ds.Tables[0].Rows[0][0];
-                    Response.Redirect("Success.aspx");
-
+                Session["id_number"] = idnumber.Text;
+                Session["username"] = ds.Tables[0].Rows[0][1];
+                Session["user_id"] = ds.Tables[0].Rows[0][0];
+                Session["user_type"] = select_roles;
+                if(select_roles=="1")
+                {
+                   Response.Redirect("/Student/StudentWelcome.aspx");
+                }else if(select_roles == "2")
+                {
+                    Response.Redirect("/Teacher/TeacherWelcome.aspx");
+                }
+                else
+                {
+                    Response.Redirect("/Admin/AdminWelcome.aspx");
+                    
+                }
             }
         }
     }

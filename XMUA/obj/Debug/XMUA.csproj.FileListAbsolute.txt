@@ -1,4 +1,3 @@
-C:\Users\Kios\Desktop\ASP.NET\XMUA\XMUA\bin\XMUA.dll.config
 C:\Users\Kios\Desktop\ASP.NET\XMUA\XMUA\bin\XMUA.dll
 C:\Users\Kios\Desktop\ASP.NET\XMUA\XMUA\bin\XMUA.pdb
 C:\Users\Kios\Desktop\ASP.NET\XMUA\XMUA\bin\roslyn\csc.exe
@@ -57,3 +56,4 @@ C:\Users\Kios\Desktop\ASP.NET\XMUA\XMUA\obj\Debug\XMUA.csproj.CoreCompileInputs.
 C:\Users\Kios\Desktop\ASP.NET\XMUA\XMUA\obj\Debug\XMUA.csproj.CopyComplete
 C:\Users\Kios\Desktop\ASP.NET\XMUA\XMUA\obj\Debug\XMUA.dll
 C:\Users\Kios\Desktop\ASP.NET\XMUA\XMUA\obj\Debug\XMUA.pdb
+C:\Users\Kios\Desktop\ASP.NET\XMUA\XMUA\bin\XMUA.dll.config

@@ -96,20 +96,24 @@
                 <div class="inputBox">
                     <div class="inputText">
                         <i class="fa fa-user-circle-o i2" aria-hidden="true"></i>
-                        <asp:TextBox CssClass="cctb" onfocus="this.value=''" onBlur="this.value='Username'" ID="username" runat="server" Text="Username" ToolTip="Username"></asp:TextBox>
+                        <asp:TextBox CssClass="cctb" onfocus="this.value=''" runat="server" Text="Student/Teacher/Admin ID" ToolTip="ID Number" ID="idnumber"></asp:TextBox>
                     </div>
                     <div class="inputText">
                         <i class="fa fa-unlock-alt i3" aria-hidden="true"></i>
-                        <asp:TextBox CssClass="cctb" onfocus="this.value=''" onBlur="this.value='Password'"  ID="password" runat="server" Text="Password" ToolTip="Password"></asp:TextBox>
+                        <asp:TextBox CssClass="cctb" ID="password" runat="server"  TextMode="Password" Text="Password" ToolTip="Password"></asp:TextBox>
                     </div>
                     <div  class="inputText">
                         <i class="fa fa-address-card-o i4"  aria-hidden="true"></i>
                         <asp:DropDownList CssClass="ccddl" id="role" runat="server">
-                            <asp:ListItem>Student</asp:ListItem>
-                            <asp:ListItem>Administrator</asp:ListItem>
+                            <asp:ListItem Value="1">Student</asp:ListItem>
+                            <asp:ListItem Value="2">Teacher</asp:ListItem>
+                            <asp:ListItem Value="3">Administrator</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                         <asp:Button CssClass="ccb "  ID="Loginb" runat="server" Text="Button" OnClick="Loginb_Click" />
+                    <div class="inputText">
+                        <asp:Label ID="alert" runat="server" Text="" ForeColor="Red"></asp:Label>
+                    </div>
                 </div>
             </div>
         </div>

@@ -67,16 +67,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\AdminWelcome.aspx" />
     <Content Include="css\font-awesome\css\font-awesome.css" />
     <Content Include="css\font-awesome\css\font-awesome.min.css" />
     <Content Include="css\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="css\StyleStudent.css" />
+    <Content Include="Global.asax" />
     <Content Include="img\bgimg.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\study.jpg" />
     <Content Include="Login.aspx" />
-    <Content Include="Success.aspx" />
+    <Content Include="Student\StudentWelcome.aspx" />
+    <Content Include="Student\Success.aspx" />
     <Content Include="Web.config" />
     <Content Include="Fail.aspx" />
+    <Content Include="Teacher\TeacherWelcome.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminWelcome.aspx.cs">
+      <DependentUpon>AdminWelcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminWelcome.aspx.designer.cs">
+      <DependentUpon>AdminWelcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -85,11 +109,25 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Success.aspx.cs">
+    <Compile Include="Student\Student.Master.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Student.Master.designer.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentWelcome.aspx.cs">
+      <DependentUpon>StudentWelcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StudentWelcome.aspx.designer.cs">
+      <DependentUpon>StudentWelcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Success.aspx.cs">
       <DependentUpon>Success.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Success.aspx.designer.cs">
+    <Compile Include="Student\Success.aspx.designer.cs">
       <DependentUpon>Success.aspx</DependentUpon>
     </Compile>
     <Compile Include="Fail.aspx.cs">
@@ -98,6 +136,20 @@
     </Compile>
     <Compile Include="Fail.aspx.designer.cs">
       <DependentUpon>Fail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\Teacher.Master.cs">
+      <DependentUpon>Teacher.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\Teacher.Master.designer.cs">
+      <DependentUpon>Teacher.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\TeacherWelcome.aspx.cs">
+      <DependentUpon>TeacherWelcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\TeacherWelcome.aspx.designer.cs">
+      <DependentUpon>TeacherWelcome.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -134,13 +186,16 @@
     <Content Include="css\font-awesome\scss\_screen-reader.scss" />
     <Content Include="css\font-awesome\scss\_stacked.scss" />
     <Content Include="css\font-awesome\scss\_variables.scss" />
+    <Content Include="Admin\Admin.Master" />
     <None Include="packages.config" />
+    <Content Include="Student\Student.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Teacher\Teacher.Master" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

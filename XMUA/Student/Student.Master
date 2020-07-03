@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Student.master.cs" Inherits="XMUA.Student.Student" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <LINK REL="stylesheet" HREF="~/css/StyleStudent.css" TYPE="text/css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body >
+    <form id="form1" runat="server">
+
+        <div class="nav">
+             <ul class="navul">
+                 <li><a href="StudentWelcome.aspx">Home</a></li>
+                 <li><a href="#">Course</a></li>
+                 <li><a href="#">Exam</a></li>
+                 <li><a href="#">Leave</a></li>
+                 <li><a href="#">Health Attendance</a></li>
+                 <li><a href="#">Chat</a></li>
+                 <li><a href="#">Personal Info</a></li>
+             </ul>
+        </div>
+        <div >
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
