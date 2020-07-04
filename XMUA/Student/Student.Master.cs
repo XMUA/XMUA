@@ -13,5 +13,15 @@ namespace XMUA.Student
         {
 
         }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Session["id_number"] = null;
+            Session["username"] = null;
+            Session["user_id"] = null;
+            Session["user_type"] = null;
+            Response.Write("<script language=javascript>alert('You have Logout!')</script>");
+            Response.Write("<script language=javascript>window.location.href='../Login.aspx'</script>");
+        }
     }
 }

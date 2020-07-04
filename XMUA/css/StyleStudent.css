@@ -1,5 +1,6 @@
 ﻿.nav {
-    margin: 0;
+
+    margin-left: 275px;
     padding: 0;
 }
 
@@ -67,6 +68,81 @@
      .navul li a:hover:after {
             transform: scale(1);
     }
+
+.sidenav {
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    padding: 0;
+}
+
+.sidenavul {
+    font-size: 23px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+    .sidenavul li {
+        margin-top: 60px;
+        width:250px;
+        text-align: center;
+        list-style: none;
+    }
+
+        .sidenavul li a {
+            position: relative;
+            display: block;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #262626;
+            font-weight: bold;
+            transition: .5s;
+        }
+
+            .sidenavul li a:hover {
+                color: #fff;
+            }
+
+            .sidenavul li a:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-top: 2px solid #000;
+                border-bottom: 2px solid #000;
+                transform: scaleY(2);
+                opacity: 0;
+                transition: .5s;
+                z-index: -1;
+            }
+
+            .sidenavul li a:hover:before {
+                transform: scaleY(1.2);
+                opacity: 1;
+            }
+
+            .sidenavul li a:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-top: 2px solid #000;
+                border-bottom: 2px solid #000;
+                background: #000;
+                transform: scale(0);
+                transition: .5s;
+                z-index: -1;
+            }
+
+            .sidenavul li a:hover:after {
+                transform: scale(1);
+            }
 
 .welcome {
     background-color: #DCDCDC;
@@ -148,4 +224,37 @@
         -webkit-clip-path: ellipse(100px 100px at 0% 50%);
         clip-path: ellipse(100px 100px at 0% 50%);
     }
+}
+.h1title {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 70px;
+}
+
+.h3title {
+
+    text-align: center;
+    margin-top: 40px;
+}
+
+    .h3title span {
+        text-align: center;
+        margin: 0 120px;
+        font-size: 30px;
+        width: 100px;
+        font-weight: bold;
+    }
+.ccb {
+    border: 0px;
+    width: 230px;
+    height: 40px;
+    font-size:25px;
+    font-weight:bold;
+    color: white;
+    margin-top: 40px;
+    border-radius: 20px;
+    outline: none;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
