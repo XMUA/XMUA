@@ -1,0 +1,155 @@
+﻿.nav {
+    margin: 0;
+    padding: 0;
+}
+
+.navul {
+    font-size: 23px;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+}
+
+    .navul li {
+        list-style: none;
+    }
+
+        .navul li a {
+            position: relative;
+            display: block;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #262626;
+            font-weight: bold;
+            transition: .5s;
+        }
+
+            .navul li a:hover {
+                color: #fff;
+            }
+
+            .navul li a:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-top: 2px solid #000;
+                border-bottom: 2px solid #000;
+                transform: scaleY(2);
+                opacity: 0;
+                transition: .5s;
+                z-index: -1;
+            }
+
+            .navul li a:hover:before {
+                transform: scaleY(1.2);
+                opacity: 1;
+            }
+
+            .navul li a:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-top: 2px solid #000;
+                border-bottom: 2px solid #000;
+                background: #000;
+                transform: scale(0);
+                transition: .5s;
+                z-index: -1;
+            }
+
+            .navul li a:hover:after {
+                transform: scale(1);
+            }
+
+.welcome {
+    background-color: #DCDCDC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 650px;
+}
+
+    .welcome:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 115px;
+        width: 99.5%;
+        height: 650px;
+        background-image: url(../img/study.jpg);
+        background-size: cover;
+        opacity: .1;
+    }
+
+    .welcome h1 {
+        color: #000;
+        font-family: Helvetica;
+        margin: 0;
+        padding: 0;
+        font-size: 9rem;
+        letter-spacing: -0.3rem;
+        position: relative;
+    }
+
+    .welcome .label1 {
+        display: flex;
+        font-size: 90px;
+        position: absolute;
+        top: 210px;
+        left: 250px;
+        font-weight: bold;
+        font-family: Helvetica;
+        color: #000;
+    }
+
+.label2 {
+    margin-top: 140px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    height: 90px;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    font-family: Helvetica;
+    color: #333;
+}
+
+.welcome h1::after {
+    content: 'Welcome to XMUA!';
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+    clip-path: ellipse(100px 100px at 0% 50%);
+    animation: spotlight 5s infinite;
+    background-image: url(https://images.unsplash.com/photo-1579547621869-0ddb5f237392?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    background-size: 150%;
+    background-position: center center;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes spotlight {
+    0% {
+        -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+        clip-path: ellipse(100px 100px at 0% 50%);
+    }
+
+    50% {
+        -webkit-clip-path: ellipse(100px 100px at 100% 50%);
+        clip-path: ellipse(100px 100px at 100% 50%);
+    }
+
+    100% {
+        -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+        clip-path: ellipse(100px 100px at 0% 50%);
+    }
+}

@@ -5,6 +5,7 @@
 <html>
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <LINK REL="stylesheet" HREF="~/css/StyleAdmin.css" TYPE="text/css">
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -12,6 +13,17 @@
 <body>
     <form id="form1" runat="server">
         <div>
+         <div class="nav">
+             <ul class="navul">
+                 <li><a href="AdminWelcome.aspx">Home</a></li>
+                 <li><a href="#">Course</a></li>
+                 <li><a href="#">Exam</a></li>
+                 <li><a href="#">Leave</a></li>
+                 <li><a href="#">Health Attendance</a></li>
+                 <li><a href="#">Chat</a></li>
+                 <li><a href="#">Personal Info</a></li>
+             </ul>
+          </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
