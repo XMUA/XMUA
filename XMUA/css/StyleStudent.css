@@ -1,4 +1,7 @@
-﻿.nav {
+﻿body {
+    font-family: Helvetica;
+}
+.nav {
 
     margin-left: 275px;
     padding: 0;
@@ -228,33 +231,135 @@
 .h1title {
     font-size: 50px;
     text-align: center;
+    text-transform: uppercase;
     margin-top: 50px;
+    margin-bottom: 20px;
     width: 100%;
     height: 70px;
+    position: relative;
+    left: 10px;
 }
 
-.h3title {
-
+.pitable {
+    margin: 50px auto 0 auto;
+    width: 1050px;
+    font-size: 25px;
+    font-weight: bold;
     text-align: center;
-    margin-top: 40px;
 }
 
-    .h3title span {
-        text-align: center;
-        margin: 0 120px;
+    .pitable .trtitle {
         font-size: 30px;
-        width: 100px;
-        font-weight: bold;
+    }
+
+.septalline1 {
+    text-align: center;
+    border-bottom: 3px solid #00f2fe;
+    width: 1000px;
+    height: 5px;
+    position: relative;
+    left: 350px;
+}
+
+.septalline2 {
+    text-align: center;
+    border-bottom: 3px solid #4facfe;
+    width: 1000px;
+    height: 5px;
+    position: relative;
+    left: 350px;
+}
+.tbEdit
+{
+   font-size:18px;
+   height:30px;
+
+}
+    .tbEdit:focus {
+        border-color: #00f2fe;
+        box-shadow: 0 0 5px #4facfe;
     }
 .ccb {
     border: 0px;
     width: 230px;
     height: 40px;
-    font-size:25px;
-    font-weight:bold;
+    font-size: 25px;
+    font-weight: bold;
     color: white;
-    margin-top: 40px;
+    margin-top: 15px;
     border-radius: 20px;
     outline: none;
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
+.ccb:hover{
+    color:blue;
+}
+.pitable2 {
+    margin: 50px auto 0 auto;
+    width: 800px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.pitable .trtitle .tdword {
+    font-size: 20px;
+    border-right: 2px solid black;
+    width: 400px;
+}
+
+.pitable .trtitle .tdinput1 {
+    height: 30px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.pitable .trtitle .tdinput {
+    width: 400px;
+    text-align: center;
+}
+.hacontainer {
+    font-family: Helvetica;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border-radius: 20px;
+    background-color: #4facfe;
+    box-shadow: 15px 15px 10px #0074FE;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+}
+.outDiv {
+    font-size:20px;
+    margin: 30px 40px;
+    border-bottom:1px dashed white;
+    color:white;
+
+}
+.outDiv .titleDiv
+{
+
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+.outbdiv {
+    margin: 20px 40px;
+    text-align:center;
+}
+.ccb2 {
+    border: 0px;
+    width: 230px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+    border-radius: 20px;
+    outline: none;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+    .ccb2:hover {
+        background-image: linear-gradient(to left, #92fe9d 0%, #00c9ff 100%);
+    }

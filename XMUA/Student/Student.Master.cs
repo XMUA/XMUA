@@ -11,7 +11,7 @@ namespace XMUA.Student
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            nVisitor.Text = Convert.ToString(Application["cntVisitor"]);
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)
@@ -22,6 +22,7 @@ namespace XMUA.Student
             Session["user_type"] = null;
             Response.Write("<script language=javascript>alert('You have Logout!')</script>");
             Response.Write("<script language=javascript>window.location.href='../Login.aspx'</script>");
+            
         }
     }
 }

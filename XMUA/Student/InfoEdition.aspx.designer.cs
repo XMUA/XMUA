@@ -11,8 +11,17 @@ namespace XMUA.Student
 {
 
 
-    public partial class info
+    public partial class InfoEdition
     {
+
+        /// <summary>
+        /// ScriptManager1 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
 
         /// <summary>
         /// idnumber 控件。
@@ -33,22 +42,22 @@ namespace XMUA.Student
         protected global::System.Web.UI.WebControls.Label programme;
 
         /// <summary>
-        /// username 控件。
+        /// tbusername 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label username;
+        protected global::System.Web.UI.WebControls.TextBox tbusername;
 
         /// <summary>
-        /// pn 控件。
+        /// tbpn 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label pn;
+        protected global::System.Web.UI.WebControls.TextBox tbpn;
 
         /// <summary>
         /// intake 控件。
@@ -69,12 +78,21 @@ namespace XMUA.Student
         protected global::System.Web.UI.WebControls.Label nationaliry;
 
         /// <summary>
-        /// edit 控件。
+        /// RequiredFieldValidator1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button edit;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+
+        /// <summary>
+        /// save 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button save;
     }
 }

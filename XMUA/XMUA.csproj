@@ -77,17 +77,21 @@
     <Content Include="Global.asax" />
     <Content Include="img\bgimg.jpg" />
     <Content Include="img\logo.png" />
+    <Content Include="img\smile.png" />
     <Content Include="img\study.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="Student\ChatStudent.aspx" />
     <Content Include="Student\CourseSelection.aspx" />
+    <Content Include="Student\EditPassword.aspx" />
     <Content Include="Student\ExamResult.aspx" />
     <Content Include="Student\ExamTime.aspx" />
     <Content Include="Student\Health.aspx" />
     <Content Include="Student\Info.aspx" />
+    <Content Include="Student\InfoEdition.aspx" />
     <Content Include="Student\Leave.aspx" />
     <Content Include="Student\LeaveApply.aspx" />
     <Content Include="Student\StudentWelcome.aspx" />
+    <Content Include="Student\SubmitFail.aspx" />
     <Content Include="Student\Success.aspx" />
     <Content Include="Student\TimeTable.aspx" />
     <Content Include="Web.config" />
@@ -134,6 +138,13 @@
     <Compile Include="Student\CourseSelection.aspx.designer.cs">
       <DependentUpon>CourseSelection.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Student\EditPassword.aspx.cs">
+      <DependentUpon>EditPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\EditPassword.aspx.designer.cs">
+      <DependentUpon>EditPassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Student\ExamResult.aspx.cs">
       <DependentUpon>ExamResult.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -162,6 +173,13 @@
     <Compile Include="Student\Info.aspx.designer.cs">
       <DependentUpon>Info.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Student\InfoEdition.aspx.cs">
+      <DependentUpon>InfoEdition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\InfoEdition.aspx.designer.cs">
+      <DependentUpon>InfoEdition.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Student\Leave.aspx.cs">
       <DependentUpon>Leave.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -189,6 +207,13 @@
     </Compile>
     <Compile Include="Student\StudentWelcome.aspx.designer.cs">
       <DependentUpon>StudentWelcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\SubmitFail.aspx.cs">
+      <DependentUpon>SubmitFail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\SubmitFail.aspx.designer.cs">
+      <DependentUpon>SubmitFail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Student\Success.aspx.cs">
       <DependentUpon>Success.aspx</DependentUpon>

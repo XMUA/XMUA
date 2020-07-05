@@ -1,11 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Student/Student.Master" AutoEventWireup="true" CodeBehind="Info.aspx.cs" Inherits="XMUA.Student.info" %>
+﻿<%@ Page Title="" UnobtrusiveValidationMode="None" Language="C#"  MasterPageFile="~/Student/Student.Master" AutoEventWireup="true" CodeBehind="InfoEdition.aspx.cs" Inherits="XMUA.Student.InfoEdition" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-	    <div class="sidenav">
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+	<div class="sidenav">
         <ul class="sidenavul">
              <li ><a href="Info.aspx">Personal Info</a></li>
-             <li><a href="InfoEdition.aspx">Info Edition</a></li>
+             <li ><a href="InfoEdition.aspx">Info Edition</a></li>
 			<li><a href="EditPassword.aspx">Change Password</a></li>
         </ul>
     </div>
@@ -13,7 +14,7 @@
         	Personal Information
         </div>
          <div class="septalline2"></div>
-	    <table class="pitable">
+	    	<table class="pitable">
 	    	<tr class="trtitle">
 	    		<td>
 	    			ID NUMBER
@@ -28,7 +29,7 @@
 	    	</tr>
 	    	<tr>
 	    		<td>
-	    			<asp:Label ID="idnumber" runat="server" Text=""></asp:Label>
+	    			<asp:Label ID="idnumber" runat="server" Text="" ></asp:Label>
 	    		</td>
 	    		<td>
 					<asp:Label ID="programme" runat="server" Text=""></asp:Label>
@@ -56,11 +57,10 @@
 	    	</tr>
 	    	<tr >
 	    		<td>
-					<asp:Label ID="username" runat="server" Text=""></asp:Label>
-	    			
+                    <asp:TextBox CssClass="tbEdit" ID="tbusername" runat="server" Text='<%# Bind("username") %>'></asp:TextBox>
 	    		</td>
 	    		<td>
-	        		 <asp:Label ID="pn" runat="server" Text=""></asp:Label>
+	        		 <asp:TextBox CssClass="tbEdit" ID="tbpn" runat="server" Text='<%# Bind("phonenumber") %>'></asp:TextBox>
 	    		</td>	    		
 	    	</tr>
 	    	<tr style="height: 40px">
@@ -96,8 +96,9 @@
 	    	</tr>	    		    	
 	    </table> 
 	   	<div class="septalline1"></div>
+		<div style="font-size:20px;text-align:center;font-weight:bold;margin-top:20px;">
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Username should not be empty!" ControlToValidate="tbusername" ForeColor="Red"></asp:RequiredFieldValidator></div>
 		<div style="text-align:center;">
-			<asp:Button CssClass="ccb " ID="edit" runat="server" Text="EDIT" OnClick="edit_Click" />	 
+			<asp:Button CssClass="ccb " ID="save" runat="server" Text="SAVE" OnClick="save_Click"  />	 
 		</div>
-
 </asp:Content>

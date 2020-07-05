@@ -23,7 +23,7 @@ namespace XMUA
             SqlConnection connection = new SqlConnection("Server=DESKTOP-AD15ROA\\SQLEXPRESS;UId=xmum;Password=123456;Database=XMUA");
             connection.Open();
 
-            SqlCommand cmd = new SqlCommand("select * from [User] where IDnumber=@IDN and password=@PWD and type=@TY", connection);
+            SqlCommand cmd = new SqlCommand("select * from Users where IDnumber=@IDN and password=@PWD and type=@TY", connection);
             cmd.Parameters.Add("@IDN", System.Data.SqlDbType.VarChar, 100).Value = idnumber.Text;
             cmd.Parameters.Add("@PWD", System.Data.SqlDbType.VarChar, 100).Value = password.Text;
             cmd.Parameters.Add("@TY", System.Data.SqlDbType.VarChar, 100).Value = select_roles;

@@ -13,17 +13,5 @@
         </div>
 
      </div>
-        <div class="label2">
-        <div style="float:right;">
-            <div style="margin-top:30px;margin-right:550px;font-size:30px;color:white;">
-                Visitors : <asp:Label ID="nVisitor" runat="server" Text="Label"></asp:Label>
-            </div>
-        </div>
 
-        <div style="padding:8px; width:340px;position:relative;left:500px;">
-            <div style="height:70px;padding:5px;">
-                <img src="../img/logo.png" />
-            </div>
-        </div>
-         </div>
 </asp:Content>
