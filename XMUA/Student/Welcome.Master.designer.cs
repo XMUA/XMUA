@@ -11,7 +11,7 @@ namespace XMUA.Student
 {
 
 
-    public partial class Student
+    public partial class Welcome
     {
 
         /// <summary>

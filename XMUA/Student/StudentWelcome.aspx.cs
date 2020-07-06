@@ -17,7 +17,8 @@ namespace XMUA.Student
                 Response.Write("<script language=javascript>window.location.href='../Login.aspx'</script>");
             }
             un.Text = (string)Session["username"];
-           
+            nVisitor.Text = Convert.ToString(Application["cntVisitor"]);
+
         }
     }
 }

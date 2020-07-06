@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Student.master.cs" Inherits="XMUA.Student.Student" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Welcome.master.cs" Inherits="XMUA.Student.Welcome" %>
 
 <!DOCTYPE html>
 
@@ -9,11 +9,9 @@
     <LINK REL="stylesheet" HREF="~/css/StyleStudent.css" TYPE="text/css">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-
 </head>
-<body class="body1" >
+<body>
     <form id="form1" runat="server">
-        
         <div class="nav">
              <ul class="navul">
                  <li><a href="StudentWelcome.aspx">Home</a></li>
@@ -29,7 +27,6 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-
     </form>
 </body>
 </html>
