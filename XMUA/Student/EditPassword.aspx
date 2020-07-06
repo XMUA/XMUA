@@ -5,7 +5,7 @@
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
       <div class="sidenav">
         <ul class="sidenavul">
-             <li ><a href="Info.aspx">Personal Info</a></li>
+             <li style="width:230px"><a href="Info.aspx">Personal Info</a></li>
              <li><a href="InfoEdition.aspx">Info Edition</a></li>
 			<li><a href="EditPassword.aspx">Change Password</a></li>
         </ul>

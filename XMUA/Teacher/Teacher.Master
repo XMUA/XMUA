@@ -19,7 +19,6 @@
                  <li><a href="TeacherWelcome.aspx">Home</a></li>
                  <li><a href="#">Course</a></li>
                  <li><a href="#">Leave</a></li>
-                 <li><a href="#">Chat</a></li>
              </ul>
         </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

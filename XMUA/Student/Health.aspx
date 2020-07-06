@@ -16,8 +16,8 @@
          <div class="outDiv">
              <div class="titleDiv">Today's temperature</div>
               <div style="margin-bottom:20px">
-                 <asp:RadioButton ID="rbL" Text="Lower than 36.3℃" runat="server" GroupName="Temperature"/><br/>
-                 <asp:RadioButton ID="rbH" Text="Higher than 36.3℃" runat="server"  GroupName="Temperature" />
+                 <asp:RadioButton ID="rbL" Text="Lower than 37.3℃" runat="server" GroupName="Temperature"/><br/>
+                 <asp:RadioButton ID="rbH" Text="Higher than 37.3℃" runat="server"  GroupName="Temperature" />
              </div>
          </div>
          <div class="outDiv">

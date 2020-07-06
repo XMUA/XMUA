@@ -21,7 +21,6 @@
                  <li><a href="ExamTime.aspx">Exam</a></li>
                  <li><a href="Leave.aspx">Leave</a></li>
                  <li><a href="Health.aspx">Health Attendance</a></li>
-                 <li><a href="ChatStudent.aspx">Chat</a></li>
                  <li><a href="Info.aspx">Personal Info</a></li>
                  <li><asp:LinkButton CssClass="LLB" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Logout</asp:LinkButton></li>
              </ul>

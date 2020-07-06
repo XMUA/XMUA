@@ -78,6 +78,7 @@ namespace XMUA.Student
             cmd.Parameters.AddWithValue("@S", symptom);
             cmd.ExecuteNonQuery();
             cmd.Dispose();
+            Response.Redirect("Success.aspx");
         }
     }
 }
