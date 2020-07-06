@@ -75,12 +75,12 @@
     <Content Include="css\StyleStudent.css" />
     <Content Include="css\StyleTeacher.css" />
     <Content Include="Global.asax" />
-    <Content Include="img\bg1.png" />
-    <Content Include="img\bg2.png" />
+    <Content Include="img\bg.png" />
     <Content Include="img\bgimg.jpg" />
     <Content Include="img\logo.png" />
     <Content Include="img\smile.png" />
     <Content Include="img\study.jpg" />
+    <Content Include="img\XMUAlogo.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="Student\CourseSelection.aspx" />
     <Content Include="Student\EditPassword.aspx" />

@@ -47,45 +47,54 @@ namespace XMUA.Student
             for (int i = 0; i < GridView1.Rows.Count; ++i)
             {
                 int exist_student =Convert.ToInt32( ((Label)GridView1.Rows[i].FindControl("Label7")).Text);
-
-                CheckBox chk = (CheckBox)GridView1.Rows[i].FindControl("chk");
-                if (chk.Checked == true)
+                if (exist_student <= 30)
                 {
-                    int new_exist = exist_student + 1;
-                    SqlCommand cmd2 = new SqlCommand("Select * from Score  where student_id=@SID1 and course_id=@CID1 ", connection);
-                    cmd2.Parameters.Add("@CID1", SqlDbType.VarChar, 100).Value =
-                       ((Label)GridView1.Rows[i].FindControl("Label1")).Text;
-                    cmd2.Parameters.Add("@SID1", SqlDbType.VarChar, 100).Value =
-                      (string)Session["id_number"];
-                    SqlDataAdapter adapter = new SqlDataAdapter(cmd2);
-                    DataSet ds = new DataSet();
 
-                    adapter.Fill(ds);
 
-                    if (ds.Tables[0].Rows.Count == 0)
+                    CheckBox chk = (CheckBox)GridView1.Rows[i].FindControl("chk");
+                    if (chk.Checked == true)
                     {
-                        SqlCommand cmd3 = new SqlCommand("update Course set exist=@E  where code=@CID2", connection);
-                        cmd3.Parameters.Add("@CID2", SqlDbType.VarChar, 100).Value =
+                        int new_exist = exist_student + 1;
+                        SqlCommand cmd2 = new SqlCommand("Select * from Score  where student_id=@SID1 and course_id=@CID1 ", connection);
+                        cmd2.Parameters.Add("@CID1", SqlDbType.VarChar, 100).Value =
                            ((Label)GridView1.Rows[i].FindControl("Label1")).Text;
-                        cmd3.Parameters.Add("@E", System.Data.SqlDbType.VarChar, 100).Value = new_exist;
-                        cmd3.ExecuteNonQuery();
-                        SqlCommand cmd = new SqlCommand("insert into Score(course_id,course_name,teacher_name,student_id,mark)"
-                        + "values(@CID3,@TN,@CN,@SID2,0.0)", connection);
-                        cmd.Parameters.Add("@CID3", SqlDbType.VarChar, 100).Value =
-                            ((Label)GridView1.Rows[i].FindControl("Label1")).Text;
-                        cmd.Parameters.Add("@TN", SqlDbType.VarChar, 100).Value =
-                            ((Label)GridView1.Rows[i].FindControl("Label3")).Text;
-                        cmd.Parameters.Add("@CN", SqlDbType.VarChar, 100).Value =
-                            ((Label)GridView1.Rows[i].FindControl("Label2")).Text;
-                        cmd.Parameters.Add("@SID2", SqlDbType.VarChar, 100).Value =
-                           (string)Session["id_number"];
-                        cmd.ExecuteNonQuery();
-                        alert.Text = "Select Successful!";
+                        cmd2.Parameters.Add("@SID1", SqlDbType.VarChar, 100).Value =
+                          (string)Session["id_number"];
+                        SqlDataAdapter adapter = new SqlDataAdapter(cmd2);
+                        DataSet ds = new DataSet();
 
+                        adapter.Fill(ds);
+
+                        if (ds.Tables[0].Rows.Count == 0)
+                        {
+                            SqlCommand cmd3 = new SqlCommand("update Course set exist=@E  where code=@CID2", connection);
+                            cmd3.Parameters.Add("@CID2", SqlDbType.VarChar, 100).Value =
+                               ((Label)GridView1.Rows[i].FindControl("Label1")).Text;
+                            cmd3.Parameters.Add("@E", System.Data.SqlDbType.VarChar, 100).Value = new_exist;
+                            cmd3.ExecuteNonQuery();
+                            SqlCommand cmd = new SqlCommand("insert into Score(course_id,course_name,teacher_name,student_id,mark)"
+                            + "values(@CID3,@TN,@CN,@SID2,0.0)", connection);
+                            cmd.Parameters.Add("@CID3", SqlDbType.VarChar, 100).Value =
+                                ((Label)GridView1.Rows[i].FindControl("Label1")).Text;
+                            cmd.Parameters.Add("@TN", SqlDbType.VarChar, 100).Value =
+                                ((Label)GridView1.Rows[i].FindControl("Label3")).Text;
+                            cmd.Parameters.Add("@CN", SqlDbType.VarChar, 100).Value =
+                                ((Label)GridView1.Rows[i].FindControl("Label2")).Text;
+                            cmd.Parameters.Add("@SID2", SqlDbType.VarChar, 100).Value =
+                               (string)Session["id_number"];
+                            cmd.ExecuteNonQuery();
+                            alert.Text = "Select Successful!";
+
+                        }
+                        else
+                        {
+                            alert.Text = "Some Courses are already on your CourseList.";
+                        }
                     }
-                    else {
-                       alert.Text = "Some Courses are already on your CourseList.";
-                    }
+                }
+                else
+                {
+                    alert.Text = "The class is full!";
                 }
 
             }

@@ -4,8 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="sidenav">
         <ul class="sidenavul">
-             <li><a href="Leave.aspx">Course selection</a></li>
-            <li><a href="LeaveApply.aspx">TimeTable</a></li>
+             <li><a href="Leave.aspx">Leave</a></li>
+            <li><a href="LeaveApply.aspx">Leave Apply</a></li>
         </ul>
     </div>
 </asp:Content>

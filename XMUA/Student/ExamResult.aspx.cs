@@ -11,6 +11,17 @@ namespace XMUA.Student
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["user_id"] == null)
+            {
+                Response.Write("<script language=javascript>alert('Access denied!')</script>");
+                Response.Write("<script language=javascript>window.location.href='../Login.aspx'</script>");
+            }
+            float total_gpa = 0;
+            for(int i=0;i< GridView1.Rows.Count;i++)
+            {
+                total_gpa+= Convert.ToSingle(((Label)GridView1.Rows[i].FindControl("Label1")).Text);
+            }
+            cgpa.Text = (total_gpa / (GridView1.Rows.Count)).ToString("F2");
 
         }
     }

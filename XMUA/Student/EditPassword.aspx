@@ -39,7 +39,7 @@
                     </td>
 	    		</tr> 
 	    	</table>
-	    <div class="septalline1"></div>    
+	    <div class="septalline2"></div>    
 	    	<table class="pitable">           
                 <tr class="trtitle">
                    <td class="tdword">Please Enter Your Password Again.</td>

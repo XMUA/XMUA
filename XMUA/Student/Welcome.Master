@@ -10,8 +10,11 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body style="font-family: Helvetica;">
     <form id="form1" runat="server">
+               <div style="width:300px;height:100px;position:absolute;top:10px;">
+           <img style="width:300px" src="../img/XMUAlogo.jpg" />
+           </div>
         <div class="nav">
              <ul class="navul">
                  <li><a href="StudentWelcome.aspx">Home</a></li>
