@@ -77,13 +77,24 @@ namespace XMUA.Student
                             cmd.Parameters.Add("@CID3", SqlDbType.VarChar, 100).Value =
                                 ((Label)GridView1.Rows[i].FindControl("Label1")).Text;
                             cmd.Parameters.Add("@TN", SqlDbType.VarChar, 100).Value =
-                                ((Label)GridView1.Rows[i].FindControl("Label3")).Text;
-                            cmd.Parameters.Add("@CN", SqlDbType.VarChar, 100).Value =
                                 ((Label)GridView1.Rows[i].FindControl("Label2")).Text;
+                            cmd.Parameters.Add("@CN", SqlDbType.VarChar, 100).Value =
+                                ((Label)GridView1.Rows[i].FindControl("Label3")).Text;
                             cmd.Parameters.Add("@SID2", SqlDbType.VarChar, 100).Value =
                                (string)Session["id_number"];
                             cmd.ExecuteNonQuery();
-                            alert.Text = "Select Successful!";
+
+                            SqlCommand cmd4 = new SqlCommand("insert into Exam(course_id,course_name,student_id)"
+                            + "values(@CID4,@CN2,@SID3)", connection);
+                            cmd4.Parameters.Add("@CID4", SqlDbType.VarChar, 100).Value =
+                                  ((Label)GridView1.Rows[i].FindControl("Label1")).Text;
+                            cmd4.Parameters.Add("@CN2", SqlDbType.VarChar, 100).Value =
+                               ((Label)GridView1.Rows[i].FindControl("Label2")).Text;
+                            cmd4.Parameters.Add("@SID3", SqlDbType.VarChar, 100).Value =
+                               (string)Session["id_number"];
+                            cmd4.ExecuteNonQuery();
+
+                            Response.Write("<script language=javascript>alert('Select Successful!')</script>");
 
                         }
                         else

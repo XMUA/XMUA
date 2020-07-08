@@ -110,7 +110,7 @@
                             <asp:ListItem Value="3">Administrator</asp:ListItem>
                         </asp:DropDownList>
                     </div>
-                        <asp:Button CssClass="ccb "  ID="Loginb" runat="server" Text="Button" OnClick="Loginb_Click" />
+                        <asp:Button CssClass="ccb "  ID="Loginb" runat="server" Text="LOGIN" OnClick="Loginb_Click" />
                     <div class="inputText">
                         <asp:Label ID="alert" runat="server" Text="" ForeColor="Red"></asp:Label>
                     </div>

@@ -9,7 +9,6 @@
     <LINK REL="stylesheet" HREF="~/css/StyleStudent.css" TYPE="text/css">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-
 </head>
 <body class="body1">
     <form id="form1" runat="server">

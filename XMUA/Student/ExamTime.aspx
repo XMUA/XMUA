@@ -9,13 +9,15 @@
         </ul>
     </div>
      <div style="margin:100px 0px 100px 400px;width:1100px;height:550px;text-align:center;">
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="25" Width="1100px" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="25" Width="1200px" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
         <AlternatingRowStyle BackColor="White" />
         <Columns>
-            <asp:BoundField DataField="course_id" HeaderText="COURSE ID" SortExpression="course_id" />
-            <asp:BoundField DataField="course_name" HeaderText="COURSE NAME" SortExpression="course_name" />
-            <asp:BoundField DataField="time" HeaderText="TIME" SortExpression="time" />
+            <asp:BoundField DataField="course_id" HeaderText="COURSE ID" SortExpression="course_id" ControlStyle-Width="50px" />
+            <asp:BoundField DataField="course_name" HeaderText="COURSE NAME" SortExpression="course_name" ControlStyle-Width="200px" />
+            <asp:BoundField DataField="date" HeaderText="DATE" SortExpression="date" />
             <asp:BoundField DataField="venue" HeaderText="VENUE" SortExpression="venue" />
+            <asp:BoundField DataField="start_time" HeaderText="START TIME" SortExpression="start_time" />
+            <asp:BoundField DataField="duration" HeaderText="DURATION(HOURS)" SortExpression="duration" ControlStyle-Width="50px" />
         </Columns>
         <EditRowStyle BackColor="#2461BF" />
         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -29,7 +31,7 @@
         <SortedDescendingHeaderStyle BackColor="#4870BE" />
     </asp:GridView>
          </div>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:XMUAConnectionString %>" SelectCommand="SELECT [course_id], [course_name], [time], [venue] FROM [Score] WHERE (([student_id] = @student_id) AND ([time] IS NOT NULL) AND ([venue] IS NOT NULL)) ORDER BY [time]">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:XMUAConnectionString %>" SelectCommand="SELECT [course_id], [course_name], [date], [venue], [start_time], [duration] FROM [Exam] WHERE (([student_id] = @student_id) AND ([venue] IS NOT NULL) AND ([start_time] IS NOT NULL)) ORDER BY [date]">
         <SelectParameters>
             <asp:SessionParameter Name="student_id" SessionField="id_number" Type="String" />
         </SelectParameters>
