@@ -7,11 +7,11 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace XMUA.Student
+namespace XMUA.Teacher
 {
 
 
-    public partial class EditPassword
+    public partial class TManage
     {
 
         /// <summary>

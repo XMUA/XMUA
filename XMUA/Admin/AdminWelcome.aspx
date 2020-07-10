@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="AdminWelcome.aspx.cs" Inherits="XMUA.AdminWelcome" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AWelcome.Master" AutoEventWireup="true" CodeBehind="AdminWelcome.aspx.cs" Inherits="XMUA.Admin.AdminWelcome1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <div class="schooimg"></div>
+    
     <div class="welcome">
        <div class="label1">
            Hello!

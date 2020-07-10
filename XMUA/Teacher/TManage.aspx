@@ -1,16 +1,9 @@
-﻿<%@ Page Title="" UnobtrusiveValidationMode="None" Language="C#" MasterPageFile="~/Student/Student.Master" AutoEventWireup="true" CodeBehind="EditPassword.aspx.cs" Inherits="XMUA.Student.EditPassword" %>
+﻿<%@ Page Title=""  UnobtrusiveValidationMode="None" Language="C#" MasterPageFile="~/Teacher/Teacher.Master" AutoEventWireup="true" CodeBehind="TManage.aspx.cs" Inherits="XMUA.Teacher.TManage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-      <div class="sidenav">
-        <ul class="sidenavul">
-             <li style="width:230px"><a href="Info.aspx">Personal Info</a></li>
-             <li><a href="InfoEdition.aspx">Info Edition</a></li>
-			<li><a href="EditPassword.aspx">Change Password</a></li>
-        </ul>
-    </div>
-        <div class="h1title">
+     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+     <div class="h1title">
         	Change Password
         </div>
          <div class="septalline2"></div>

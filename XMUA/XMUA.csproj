@@ -67,7 +67,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\ACourseAdd.aspx" />
+    <Content Include="Admin\ACourseManage.aspx" />
+    <Content Include="Admin\ACourseView.aspx" />
     <Content Include="Admin\AdminWelcome.aspx" />
+    <Content Include="Admin\AExamManage.aspx" />
+    <Content Include="Admin\AExamRelease.aspx" />
+    <Content Include="Admin\AExamView.aspx" />
+    <Content Include="Admin\ALeave.aspx" />
+    <Content Include="Admin\ALeaveAudit.aspx" />
     <Content Include="css\font-awesome\css\font-awesome.css" />
     <Content Include="css\font-awesome\css\font-awesome.min.css" />
     <Content Include="css\font-awesome\fonts\fontawesome-webfont.svg" />
@@ -95,22 +103,6 @@
     <Content Include="Student\SubmitFail.aspx" />
     <Content Include="Student\Success.aspx" />
     <Content Include="Student\TimeTable.aspx" />
-    <Content Include="study\css\bootstrap\3.0.3\bootstrap-theme.css" />
-    <Content Include="study\css\bootstrap\3.0.3\bootstrap-theme.min.css" />
-    <Content Include="study\css\bootstrap\3.0.3\bootstrap.css" />
-    <Content Include="study\css\bootstrap\3.0.3\bootstrap.min.css" />
-    <Content Include="study\css\bootstrap\3.0.3\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="study\css\bootstrap\3.3.5\bootstrap-theme.css" />
-    <Content Include="study\css\bootstrap\3.3.5\bootstrap-theme.min.css" />
-    <Content Include="study\css\bootstrap\3.3.5\bootstrap.css" />
-    <Content Include="study\css\bootstrap\3.3.5\bootstrap.min.css" />
-    <Content Include="study\css\bootstrap\3.3.5\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="study\css\bootstrap\3.3.6\bootstrap-theme.css" />
-    <Content Include="study\css\bootstrap\3.3.6\bootstrap-theme.min.css" />
-    <Content Include="study\css\bootstrap\3.3.6\bootstrap.css" />
-    <Content Include="study\css\bootstrap\3.3.6\bootstrap.min.css" />
-    <Content Include="study\css\bootstrap\blog.css" />
-    <Content Include="study\css\bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="study\js\bootstrap\3.0.3\bootstrap.min.js" />
     <Content Include="study\js\bootstrap\3.0.3\bootstrap.min.old.js" />
     <Content Include="study\js\bootstrap\3.3.5\bootstrap.js" />
@@ -128,18 +120,39 @@
     <Content Include="Teacher\TGScore.aspx" />
     <Content Include="Teacher\TLeave.aspx" />
     <Content Include="Teacher\TLeaveApply.aspx" />
+    <Content Include="Teacher\TManage.aspx" />
     <Content Include="Teacher\TStudentSearch.aspx" />
     <Content Include="Web.config" />
-    <Content Include="Fail.aspx" />
     <Content Include="Teacher\TeacherWelcome.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\Admin.Master.cs">
-      <DependentUpon>Admin.Master</DependentUpon>
+    <Compile Include="Admin\ACourseAdd.aspx.cs">
+      <DependentUpon>ACourseAdd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Admin.Master.designer.cs">
-      <DependentUpon>Admin.Master</DependentUpon>
+    <Compile Include="Admin\ACourseAdd.aspx.designer.cs">
+      <DependentUpon>ACourseAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ACourseManage.aspx.cs">
+      <DependentUpon>ACourseManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ACourseManage.aspx.designer.cs">
+      <DependentUpon>ACourseManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ACourseView.aspx.cs">
+      <DependentUpon>ACourseView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ACourseView.aspx.designer.cs">
+      <DependentUpon>ACourseView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Administrator.Master.cs">
+      <DependentUpon>Administrator.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Administrator.Master.designer.cs">
+      <DependentUpon>Administrator.Master</DependentUpon>
     </Compile>
     <Compile Include="Admin\AdminWelcome.aspx.cs">
       <DependentUpon>AdminWelcome.aspx</DependentUpon>
@@ -147,6 +160,48 @@
     </Compile>
     <Compile Include="Admin\AdminWelcome.aspx.designer.cs">
       <DependentUpon>AdminWelcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AExamManage.aspx.cs">
+      <DependentUpon>AExamManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AExamManage.aspx.designer.cs">
+      <DependentUpon>AExamManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AExamRelease.aspx.cs">
+      <DependentUpon>AExamRelease.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AExamRelease.aspx.designer.cs">
+      <DependentUpon>AExamRelease.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AExamView.aspx.cs">
+      <DependentUpon>AExamView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AExamView.aspx.designer.cs">
+      <DependentUpon>AExamView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ALeave.aspx.cs">
+      <DependentUpon>ALeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ALeave.aspx.designer.cs">
+      <DependentUpon>ALeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ALeaveAudit.aspx.cs">
+      <DependentUpon>ALeaveAudit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ALeaveAudit.aspx.designer.cs">
+      <DependentUpon>ALeaveAudit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AWelcome.Master.cs">
+      <DependentUpon>AWelcome.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AWelcome.Master.designer.cs">
+      <DependentUpon>AWelcome.Master</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -243,13 +298,6 @@
     <Compile Include="Student\SubmitFail.aspx.designer.cs">
       <DependentUpon>SubmitFail.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Fail.aspx.cs">
-      <DependentUpon>Fail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Fail.aspx.designer.cs">
-      <DependentUpon>Fail.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Student\Success.aspx.cs">
       <DependentUpon>Success.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -320,6 +368,13 @@
     <Compile Include="Teacher\TLeaveApply.aspx.designer.cs">
       <DependentUpon>TLeaveApply.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Teacher\TManage.aspx.cs">
+      <DependentUpon>TManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\TManage.aspx.designer.cs">
+      <DependentUpon>TManage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Teacher\TStudentSearch.aspx.cs">
       <DependentUpon>TStudentSearch.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -376,30 +431,11 @@
     <Content Include="css\font-awesome\scss\_screen-reader.scss" />
     <Content Include="css\font-awesome\scss\_stacked.scss" />
     <Content Include="css\font-awesome\scss\_variables.scss" />
-    <Content Include="Admin\Admin.Master" />
+    <Content Include="Admin\AWelcome.Master" />
+    <Content Include="Admin\Administrator.Master" />
     <None Include="packages.config" />
     <Content Include="Student\Student.Master" />
     <Content Include="Student\Welcome.Master" />
-    <Content Include="study\css\bootstrap\3.0.3\bootstrap-theme.css.map" />
-    <Content Include="study\css\bootstrap\3.0.3\bootstrap.css.map" />
-    <Content Include="study\css\bootstrap\3.0.3\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="study\css\bootstrap\3.0.3\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="study\css\bootstrap\3.0.3\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="study\css\bootstrap\3.0.3\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="study\css\bootstrap\3.3.5\bootstrap-theme.css.map" />
-    <Content Include="study\css\bootstrap\3.3.5\bootstrap.css.map" />
-    <Content Include="study\css\bootstrap\3.3.5\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="study\css\bootstrap\3.3.5\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="study\css\bootstrap\3.3.5\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="study\css\bootstrap\3.3.5\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="study\css\bootstrap\3.3.6\bootstrap-theme.css.map" />
-    <Content Include="study\css\bootstrap\3.3.6\bootstrap-theme.min.css.map" />
-    <Content Include="study\css\bootstrap\3.3.6\bootstrap.css.map" />
-    <Content Include="study\css\bootstrap\3.3.6\bootstrap.min.css.map" />
-    <Content Include="study\css\bootstrap\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="study\css\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="study\css\bootstrap\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="study\css\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Teacher\Teacher.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

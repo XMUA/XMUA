@@ -14,7 +14,6 @@ namespace XMUA
         protected void Application_Start(object sender, EventArgs e)
         {
             Application["cntVisitor"] = 0;
-            Application["chats"] = "";
         }
 
         protected void Session_Start(object sender, EventArgs e)

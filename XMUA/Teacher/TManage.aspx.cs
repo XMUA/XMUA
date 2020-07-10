@@ -6,9 +6,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace XMUA.Student
+namespace XMUA.Teacher
 {
-    public partial class EditPassword : System.Web.UI.Page
+    public partial class TManage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

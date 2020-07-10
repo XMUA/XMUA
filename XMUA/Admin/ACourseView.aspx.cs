@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace XMUA.Admin
 {
-    public partial class AdminWelcome1 : System.Web.UI.Page
+    public partial class ACourseView : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,8 +16,11 @@ namespace XMUA.Admin
                 Response.Write("<script language=javascript>alert('Access denied!')</script>");
                 Response.Write("<script language=javascript>window.location.href='../Login.aspx'</script>");
             }
-            un.Text = (string)Session["username"];
-            nVisitor.Text = Convert.ToString(Application["cntVisitor"]);
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,34 +1,34 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Teacher.master.cs" Inherits="XMUA.Teacher.Teacher1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AWelcome.Master.cs" Inherits="XMUA.Admin.AdminWelcome" %>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <LINK REL="stylesheet" HREF="~/css/StyleAdmin.css" TYPE="text/css">
     <title></title>
-    <LINK REL="stylesheet" HREF="~/css/StyleTeacher.css" TYPE="text/css">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body class="body1">
+<body>
     <form id="form1" runat="server">
         <div>
             <div style="width:300px;height:100px;position:absolute;top:10px;">
            <img style="width:300px" src="../img/XMUAlogo.jpg" />
            </div>
-             <div class="nav" style=" margin-left: 700px;">
+         <div class="nav">
              <ul class="navul">
-                 <li><a href="TeacherWelcome.aspx">Home</a></li>
-                 <li><a href="TCourse.aspx">Course</a></li>
-                 <li><a href="TLeave.aspx">Leave</a></li>
-                 <li><a href="TManage.aspx">Password</a></li>
+                 <li><a href="AdminWelcome.aspx">Home</a></li>
+                 <li><a href="ACourseView.aspx">Course</a></li>
+                 <li><a href="AExamView.aspx">Exam</a></li>
+                 <li><a href="ALeave.aspx">Leave Approval</a></li>
                  <li><asp:LinkButton CssClass="LLB" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Logout</asp:LinkButton></li>
+
              </ul>
-        </div>
+          </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-
     </form>
 </body>
 </html>

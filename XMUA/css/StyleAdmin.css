@@ -247,6 +247,139 @@
     left: 10px;
 }
 
+.pitable3 {
+    margin: 50px auto 0 auto;
+    width: 1050px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+    .pitable3 .trtitle {
+        font-size: 30px;
+    }
+
+.septalline3 {
+    text-align: center;
+    border-bottom: 3px solid #00f2fe;
+    width: 1000px;
+    height: 5px;
+    position: relative;
+    left: 250px;
+}
+
+.septalline4 {
+    text-align: center;
+    border-bottom: 3px solid #4facfe;
+    width: 1000px;
+    height: 5px;
+    position: relative;
+    left: 250px;
+}
+.pitable3 .trtitle .tdword {
+    font-size: 25px;
+    border-right: 2px solid black;
+    width: 200px;
+}
+
+.pitable3 .trtitle .tdinput1 {
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.pitable3 .trtitle .tdinput {
+    width: 400px;
+    text-align: center;
+}
+
+
+
+
+.pitable {
+    margin: 50px auto 0 auto;
+    width: 700px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-left:550px;
+}
+
+    .pitable .trtitle {
+        font-size: 30px;
+    }
+
+.septalline1 {
+    margin-top: 10px;
+    text-align: center;
+    border-bottom: 3px solid #00f2fe;
+    width: 1000px;
+    height: 5px;
+    position: relative;
+    left: 450px;
+}
+
+.septalline2 {
+    margin-top: 10px;
+    text-align: center;
+    border-bottom: 3px solid #4facfe;
+    width: 1000px;
+    height: 5px;
+    position: relative;
+    left: 450px;
+}
+
+.tbEdit {
+    font-size: 18px;
+    height: 30px;
+}
+
+    .tbEdit:focus {
+        border-color: #00f2fe;
+        box-shadow: 0 0 5px #4facfe;
+    }
+
+.ccb {
+    border: 0px;
+    width: 230px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+    margin-left:40px;
+    border-radius: 20px;
+    outline: none;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+    .ccb:hover {
+        color: blue;
+    }
+
+.pitable2 {
+    margin: 50px auto 0 auto;
+    width: 800px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.pitable .trtitle .tdword {
+    font-size: 25px;
+    border-right: 2px solid black;
+    width: 200px;
+}
+
+.pitable .trtitle .tdinput1 {
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.pitable .trtitle .tdinput {
+    width: 400px;
+    text-align: center;
+}
 .btn {
     position: relative;
     display: block;
@@ -390,4 +523,8 @@
     width: 300px;
     height: 40px;
     font-size: 20px;
+}
+.coursetb
+{
+    font-size:20px;
 }

@@ -20,21 +20,27 @@ namespace XMUA.Student
             }
             else
             {
-                SqlConnection connection = new SqlConnection("Server=DESKTOP-AD15ROA\\SQLEXPRESS;UId=xmum;Password=123456;Database=XMUA");
-                connection.Open();
+                if (!IsPostBack)
+                {
+                    SqlConnection connection = new SqlConnection("Server=DESKTOP-AD15ROA\\SQLEXPRESS;UId=xmum;Password=123456;Database=XMUA");
+                    connection.Open();
 
-                SqlCommand cmd = new SqlCommand("select * from Users where IDnumber=@IDN", connection);
-                cmd.Parameters.Add("@IDN", System.Data.SqlDbType.VarChar, 100).Value = (string)Session["id_number"];
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataSet ds = new DataSet();
+                    SqlCommand cmd = new SqlCommand("select * from Users where IDnumber=@IDN", connection);
+                    cmd.Parameters.Add("@IDN", System.Data.SqlDbType.VarChar, 100).Value = (string)Session["id_number"];
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    DataSet ds = new DataSet();
 
-                adapter.Fill(ds);
+                    adapter.Fill(ds);
 
-                
-                idnumber.Text = (string)Session["id_number"];
-                programme.Text = (string)ds.Tables[0].Rows[0][6];
-                intake.Text = (string)ds.Tables[0].Rows[0][7];
-                nationaliry.Text = (string)ds.Tables[0].Rows[0][8];
+                    tbusername.Text= (string)ds.Tables[0].Rows[0][1];
+                    tbpn.Text= (string)ds.Tables[0].Rows[0][5];
+                    idnumber.Text = (string)Session["id_number"];
+                    programme.Text = (string)ds.Tables[0].Rows[0][6];
+                    intake.Text = (string)ds.Tables[0].Rows[0][7];
+                    nationaliry.Text = (string)ds.Tables[0].Rows[0][8];
+                }
+
+
             }
         }
 
