@@ -42,6 +42,7 @@
                  <li><a href="TeacherWelcome.aspx">Home</a></li>
                  <li><a href="TCourse.aspx">Course</a></li>
                  <li><a href="TLeave.aspx">Leave</a></li>
+                 <li><a href="TManage.aspx">Password</a></li>
                  <li><asp:LinkButton CssClass="LLB" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Logout</asp:LinkButton></li>
              </ul>
         </div>      

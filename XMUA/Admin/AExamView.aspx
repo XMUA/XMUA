@@ -23,7 +23,7 @@
                         <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("isrelease") %>'></asp:TextBox>
                     </EditItemTemplate>
                     <ItemTemplate>
-                          <asp:Label ID="Label1" runat="server" Text='<%# Eval("isrelease").ToString()=="0"?"Unrelease" :"Release" %>'></asp:Label>
+                          <asp:Label ID="Label1" runat="server" Text='<%# Eval("isrelease").ToString()=="0"?"Unreleased" :"Released" %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:HyperLinkField ControlStyle-CssClass="tgv" DataNavigateUrlFields="course_id" DataNavigateUrlFormatString="AExamManage.aspx?course_id={0}" HeaderText="MANAGE" Text="Manage" />
